@@ -2,7 +2,7 @@
 ## in caching the inverse, rather than computing it repeatedly.
 ## This script provides the functions makeCacheMatrix and solveCache which will
 ## be explained below. 
-## Finally, I have included a trial run to show how the function work.
+## At the end, I have included a trial run to show how the function work.
 
 ## makeCacheMatrix creates a list that contains a function that:
 ## 1. sets the value of the matrix
@@ -13,7 +13,7 @@ makeCacheMatrix <- function(x = matrix()) {
  invs <- NULL
  set <- function(y) {
    x <<- y
-   inv <<- NULL
+   invs <<- NULL
  }
  get <- function() {x}
  setinverse <- function(inverse) {invs <<- inverse}
